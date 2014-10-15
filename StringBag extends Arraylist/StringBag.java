@@ -1,7 +1,6 @@
 /** Class StringBag extends Arraylist and implements SimpleCollection. */
 
 import java.util.ArrayList;
-import java.util.Collection;
 
 public class StringBag extends java.util.ArrayList implements SimpleCollection {
 
@@ -35,12 +34,5 @@ public class StringBag extends java.util.ArrayList implements SimpleCollection {
             }
     	}
     	return "[" + result + "]";
-    }
-
-    public static void main ( String [] args ) {
-    	StringBag sb = new StringBag ( args );
-    	System.out.println ( sb.toString () );
-    	System.out.println ( sb.contains ( "dog" ) );
-    	System.out.println ( sb.add ( "dog" ) );
     }
 }
