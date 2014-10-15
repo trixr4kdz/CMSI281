@@ -70,14 +70,4 @@ public class StringBag implements SimpleCollection {
     	}
     	return "[" + result + "]";
     }
-
-    public static void main ( String [] args ) {
-        StringBag sb = new StringBag ( args );
-        System.out.println ( sb.add ( "dog") );
-        System.out.println ( sb.remove ( "dog") );
-        //sb.clear();
-        System.out.println ( sb.isEmpty () );
-
-
-    }
 }
