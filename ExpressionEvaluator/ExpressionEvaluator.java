@@ -10,7 +10,6 @@ public class ExpressionEvaluator {
 				String operator = cs.pop ();
 				operate ( cs, operator );
 			}
-			System.out.println ( cs.toString() );
 		} 
 		System.out.println ( cs.top.item );
 	}
@@ -19,7 +18,6 @@ public class ExpressionEvaluator {
 		int second = Integer.parseInt ( cs.pop() );
 		int first = Integer.parseInt ( cs.pop() );
 		StringBuilder result = new StringBuilder ();
-
 		if ( operation.equals ( "+" ) ) {
 			result.append ( first + second );
 		}
