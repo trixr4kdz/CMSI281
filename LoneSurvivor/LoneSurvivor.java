@@ -24,7 +24,7 @@ public class LoneSurvivor {
 	      		this.num = num;
 	      		this.next = next;
 	    	}
-	  	}
+		}
 
     	private Node head;
     	private long size;
@@ -34,8 +34,8 @@ public class LoneSurvivor {
       	}
 
       	public void insert ( long num ) {
-        	Node newNode = new Node ( num, null );
-        	if ( this.head == null ) {
+       		Node newNode = new Node ( num, null );
+       		if ( this.head == null ) {
           		this.head = newNode;
           		newNode.next = newNode;
         	}
